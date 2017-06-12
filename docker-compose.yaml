@@ -8,6 +8,6 @@ services:
     image: dadarek/wait-for-dependencies
     links:
      - cache
-    depends-on: 
+    depends_on: 
      - cache
     command: cache:6379

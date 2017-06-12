@@ -1,7 +1,13 @@
 version: '2'
 services:
-services:
   cache:
     image: redis:2.8
     ports:
      - "6379:6379"
+  dep-cache:
+    image: dadarek/wait-for-dependencies
+    links:
+     - cache
+    depends-on: 
+     - cache
+    command: cache:6379

@@ -4,6 +4,13 @@ services:
     image: redis:2.8
     ports:
      - "6379:6379"
+  build:
+    image: jenkins
+    environment:
+      JAVA_OPTS: -Djava.util.logging.config.file=/var/jenkins_home/log.properties
+    ports:
+     - "80:8080"
+     - "50000:50000"
   dep-cache:
     image: dadarek/wait-for-dependencies
     links:

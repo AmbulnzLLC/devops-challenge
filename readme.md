@@ -16,3 +16,11 @@ A consultant engineer was in the middle of setting up a Jenkins server on an AWS
 Shell into the EC2 instance, examine the running containers and the code in this repository. Troubleshoot why the Jenkins web UI isn't working and possible solutions. If you make any changes to this repository, make them in a branch and push them to github.
 
 On the EC2 instance, the code is in /code/devops-challenge.
+
+## Evaluation
+
+Credit will be given for getting the Jenkins UI up and running, but this exercise is more about how you address devops-related issues and your general comfort with the tools used than whether you can solve this specific problem. Your interviewer will ask specific questions during and after the exercise.
+
+## Time alloted
+
+60 minutes.
